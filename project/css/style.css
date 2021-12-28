@@ -1,0 +1,211 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #03045e;
+}.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (max-width: 768px) {
+    .container {
+    width: 750px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+.container .nav-bar{
+    background: #212529;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.container .nav-bar .main,
+.container .nav-bar .profle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0px 10px;}
+
+.container .nav-bar .profle img{
+    height: 50px;
+    margin: 5px 10px;
+    border-radius: 50%;
+}
+.container .nav-bar .profle h2{
+    padding: 2px 15px;
+    color: #1565c0;
+    margin: 15px 0;
+    font-weight: bolder;
+}
+.container .nav-bar form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.container .nav-bar form .search{
+    display: none;
+}
+.container .nav-bar form .search.active{
+    height: 40px;
+    width: 150px;
+    background: white;
+    outline: none;
+    border: 2px solid #2196f3;
+    color: #333;
+    padding: 0 10px;
+    font-size: 17px;
+    display: block;
+    margin: 10px;
+}
+.container .nav-bar form label{
+    height: 40px;
+    width: 60px;
+    background: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.container .nav-bar form label:hover{
+    color: #0d47a1;
+}
+.container i{
+    font-size: 30px;
+    margin: 15px 20px;
+    color: #e3f2fd;
+}
+.container i:nth-child(6){
+    margin: 16px 25px 16px 150px;
+}
+.container i:nth-child(7){
+    margin: 16px 10px ;
+}
+.container i:nth-child(6).active,
+.container i:nth-child(7).active{
+    display: none;
+}
+
+.container i:hover{
+    color: #1565c0;
+}
+  /* Small */
+@media (max-width: 768px){
+.icons{
+        margin:0 50px 0 140px ;
+}
+.container i{
+    margin:  15px 10px;
+}
+.container .icons.space{
+    margin: 0 165px ; 
+}
+.container i:nth-child(2),
+.container i:nth-child(3),
+.container i:nth-child(5),
+.container i:nth-child(6){
+    display: none;
+}
+.container .nav-bar form .search.active{
+    width: 170px;
+    display: block;
+}
+.container i:nth-child(6) {
+    margin:0px;
+}
+}
+
+/*End*/
+
+@media (max-width: 999px) {
+    .container {
+    }
+  }
+
+/*end*/
+
+.box-container{
+    width: 50%;
+    background-color: #212529;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;;
+}
+.box-container .box{
+    width: 500px;
+    height: 100px;
+    outline: none;
+    border: 3px solid #caf0f8;
+    background-color:#1565c0 ;
+    color: #eee;
+    max-width: 500px;
+    min-height: 100px;
+    min-width:500px;
+    max-height: 100px;
+    margin: 10px auto;
+}
+.box-container .box:focus{
+    background-color:#2196f3 ;
+}
+.box-container  .main{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 5px  20px;
+}
+.box-container  .main .post{
+    background-color: #1565c0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #e3f2fd;
+    margin: 5px 15px;
+}
+@media (max-width: 999px) {
+    .box-container .box{    max-width: 200px;
+        min-height: 65px;
+        min-width: 300px;
+        max-height: 65px;
+        max-width: 300px;
+    }
+}
+@media (max-width: 768px){
+    .box-container{
+        width: 100%;
+        background-color: #212529;
+        text-align: center;
+        margin: 10px 50px;
+    }
+.box-container .box{    max-width: 200px;
+    min-height: 65px;
+    min-width: 200px;
+    max-height: 65px;
+    max-width: 200px;
+}
+}
